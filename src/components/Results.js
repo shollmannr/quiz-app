@@ -4,8 +4,7 @@ import './Quiz'
 
 export class Results extends Component {
 
-    render() {
-        const { question, options, currentIndex, userAnswer, quizEnd } = this.state //get the current state
+    render() { const { question, options, currentIndex, userAnswer, quizEnd } = this.state //get the current state
 
         if (quizEnd) {
             return (
