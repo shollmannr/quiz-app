@@ -1,7 +1,8 @@
 import { Quiz } from "./Quiz"
 
-render(); {
-    const { question, options, currentIndex, userAnswer, quizEnd } = this.state
+render() {
+    const { question, options, currentIndex, userAnswer, quizEnd } = this.state //get the current state
+
     if (quizEnd) {
         return (
             <div>
@@ -9,7 +10,7 @@ render(); {
                 <p>The correct Answers for the quiz are</p>
                 <ul>
                     {QuizData.map((item, index) => (
-                        <li className='options'
+                        <li className='ui floating message options'
                             key={index}>
                             {item.answer}
                         </li>
@@ -18,7 +19,6 @@ render(); {
             </div>
         )
     }
-
     return (
         <div>
             <h2>{question}</h2>
