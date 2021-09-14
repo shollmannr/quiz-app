@@ -1,3 +1,5 @@
+import React, { Component } from 'react'
+import Quiz from './Quiz'
 export const QuizData = [
     {
         id: 0,
